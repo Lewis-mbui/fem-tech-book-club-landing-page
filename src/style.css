@@ -1,3 +1,27 @@
+/* CUSTOM PROPS */
+:root {
+  /* Primary colors */
+  --clr-primary-200: hsl(195, 23%, 28%);
+  --clr-primary-300:hsl(196, 46%, 73%);
+  --clr-primary-400: hsl(194, 78%, 11%);
+
+  /* Accent Colors */
+  --clr-accent-200: hsl(22, 100%, 91%);
+  --clr-accent-300: hsl(24, 100%, 97%);
+  --clr-accent-400: hsl(22, 99%, 72%);
+  
+  /* Neutral colors */
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(10, 11%, 89%);
+  --clr-neutral-300: hsl(20, 37%, 97%);
+
+  /* Gradients */
+  --text-gradient: linear-gradient(107deg, var(--clr-accent-400) -11.37%, var(--clr-primary-400) 61.84%);
+  --default-gradient: linear-gradient(90deg, var(--clr-accent-200) 0%, var(--clr-accent-300)100%);
+  --card-gradient:linear-gradient(135deg, var(--clr-neutral-200) 65%, var(--clr-primary-300) 100%);
+
+}
+
 /* RESET STYLES */
 /* Box sizing rules */
 *,
