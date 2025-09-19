@@ -176,3 +176,46 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
+/* UTILITY CLASSES */
+.text-color-primary-200 { color: var(--clr-primary-200); }
+.text-color-primary-300 { color: var(--clr-primary-300); }
+.text-color-primary-400 { color: var(--clr-primary-400); }
+.text-color-accent-200 { color: var(--clr-accent-200); }
+.text-color-accent-300 { color: var(--clr-accent-300); }
+.text-color-accent-400 { color: var(--clr-accent-400); }
+.text-color-neutral-100 { color: var(--clr-neutral-100); }
+.text-color-neutral-200 { color: var(--clr-neutral-200); }
+.text-color-neutal-300 { color: var(--clr-neutral-300); }
+
+.bg-color-primary-200 { background-color: var(--clr-primary-200); }
+.bg-color-primary-300 { background-color: var(--clr-primary-300); }
+.bg-color-primary-400 { background-color: var(--clr-primary-400); }
+.bg-color-accent-200 { background-color: var(--clr-accent-200); }
+.bg-color-accent-300 { background-color: var(--clr-accent-300); }
+.bg-color-accent-400 { background-color: var(--clr-accent-400); }
+.bg-color-neutral-100 { background-color: var(--clr-neutral-100); }
+.bg-color-neutral-200 { background-color: var(--clr-neutral-200); }
+.bg-color-neutal-300 { background-color: var(--clr-neutral-300); }
+
+.text-gradient { -webkit-text-fill-color: var(--text-gradient); }
+.default-gradient { background: var(--default-gradient); }
+.card-gradient { background: var(--card-gradient); }
+
+.fw-regular { font-weight: var(--fw-regular); }
+.fw-semibold { font-weight: var(--fw-semibold); }
+.fw-bold { font-weight: var(--fw-bold); }
+
+.ff-primary { font-family: var(--ff-primary); }
+.ff-secondary { font-family: var(--ff-secondary); }
+
+.fs-body { font-size: var(--fs-body); }
+.fs-primary-heading { font-size: var(--fs-primary-heading); }
+.fs-secondary-heading { font-size: var(--fs-secondary-heading); }
+.fs-buttons { font-size: var(--fs-buttons); }
+.fs-testimonial { font-size: var(--fs-testimonial); }
+
+.lh-primary-header { line-height: var(--lh-primary-header); }
+.lh-secondary-header { line-height: var(--lh-secondary-header); }
+.lh-body { line-height: var(--lh-body); }
+.lh-testimonial { line-height: var(--lh-testimonial); }
