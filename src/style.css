@@ -177,6 +177,43 @@ svg {
   }
 }
 
+/* BUTTONS */
+.btn {
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem;
+  gap: .8rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.btn--primary {
+  background-color: transparent;
+  border: 2px solid var(--clr-primary-400);
+  color: var(--clr-primary-400);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn--primary:hover {
+  background: var(--default-gradient);
+  transform: scale(1.05);
+}
+
+.btn--secondary {
+  background: linear-gradient(45deg, var(--clr-primary-400), var(--clr-primary-400));
+  border: 2px solid var(--clr-neutral-100);
+  color: var(--clr-neutral-100);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn--secondary:hover {
+  background: linear-gradient(to right, var(--clr-primary-200), var(--clr-primary-400));
+  transform: scale(1.05);
+}
+
 /* UTILITY CLASSES */
 .text-color-primary-200 { color: var(--clr-primary-200); }
 .text-color-primary-300 { color: var(--clr-primary-300); }
