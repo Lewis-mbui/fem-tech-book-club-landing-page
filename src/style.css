@@ -255,6 +255,25 @@ svg {
   }
 }
 
+/* TICKED LISTS */
+.list--tick {
+  font-size: var(--fs-400);
+  display: flex;
+  flex-direction: column;
+  line-height: var(--lh-500);
+  gap: 1rem;
+}
+
+.list--tick li::before {
+  content: url(/public/images/icon-check.svg);
+}
+
+.list--tick li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
 /* UTILITY CLASSES */
 .text-color-primary-200 { color: var(--clr-primary-200); }
 .text-color-primary-300 { color: var(--clr-primary-300); }
