@@ -190,6 +190,11 @@ svg {
   transition: transform 0.3s;
 }
 
+.btn--block {
+  display: block;
+  width: 100%;
+}
+
 .btn--primary {
   background-color: transparent;
   border: 2px solid var(--clr-primary-400);
@@ -272,6 +277,32 @@ svg {
   display: flex;
   align-items: center;
   gap: 0.7rem;
+}
+
+/* CARD */
+.card {
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.card__header {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 1rem;
+}
+
+.card__type, .card__price {
+  font-size: var(--fs-450);
+}
+
+.billing-cycle {
+  font-size: var(--fs-400);
+  padding-left: .5rem;
+}
+
+.card__body .list--tick{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 /* UTILITY CLASSES */
