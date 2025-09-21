@@ -305,6 +305,11 @@ svg {
   padding-bottom: 2rem;
 }
 
+/* STARS GROUP */
+.stars-group {
+  display: inline-flex;
+}
+
 /* UTILITY CLASSES */
 .text-color-primary-200 { color: var(--clr-primary-200); }
 .text-color-primary-300 { color: var(--clr-primary-300); }
