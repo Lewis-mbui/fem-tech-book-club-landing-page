@@ -214,6 +214,47 @@ svg {
   transform: scale(1.05);
 }
 
+/* NUMBERED LISTS */
+.list--num {
+  counter-reset: my-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.list--num li {
+  counter-increment: my-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.list--num li::before {
+  content: counter(my-counter);
+  border: 2px solid var(--clr-primary-400);
+  border-radius: 0.3rem;
+  align-self: flex-start;
+  padding: .2rem .5rem;
+}
+
+@media (min-width: 65em) {
+  .list--num {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .list--num li {
+    position: relative;
+  }
+
+  :where(.list--num >  :not(:last-child))::after{
+    content: url(/public/images/pattern-arrow.svg);
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
 /* UTILITY CLASSES */
 .text-color-primary-200 { color: var(--clr-primary-200); }
 .text-color-primary-300 { color: var(--clr-primary-300); }
