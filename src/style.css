@@ -197,7 +197,7 @@ svg {
 }
 
 .btn--primary {
-  background-color: transparent;
+  background: linear-gradient(var(--clr-accent-300), var(--clr-accent-300));
   border: 2px solid var(--clr-primary-400);
   color: var(--clr-primary-400);
   transition: transform 0.2s, background 0.2s;
@@ -317,6 +317,7 @@ svg {
   justify-content: center;
   align-items: center;
   gap: .5rem;
+  max-width: 450px;
 }
 
 .media__image {
@@ -333,6 +334,43 @@ svg {
 .header {
   padding-block: 1rem;
 }
+
+/* HERO SECTION */
+.hero {
+  padding-block: 2rem;
+}
+
+.hero__container {
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 65em) {
+  .hero__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hero__headline {
+  line-height: var(--lh-primary-header);
+  font-weight: var(--fw-bold);
+
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__header > p,
+.hero__header .btn,
+.hero__header .media {
+  margin-top: 1.5rem;
+}
+
+.hero img {
+  border-radius: .25rem;
+}
+
 
 /* UTILITY CLASSES */
 .container {
