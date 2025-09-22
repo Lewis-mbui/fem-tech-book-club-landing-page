@@ -317,11 +317,6 @@ svg {
   justify-content: center;
   align-items: center;
   gap: .5rem;
-  outline: 1px solid red;
-}
-
-.media > * {
-  /* outline: 1px solid red; */
 }
 
 .media__image {
@@ -334,7 +329,25 @@ svg {
   font-size: var(--fs-200);
 }
 
+/* HEADER */
+.header {
+  padding-block: 1rem;
+}
+
 /* UTILITY CLASSES */
+.container {
+  padding-inline: 1rem;
+  max-width: 1100px;
+  margin-inline: auto;
+  outline: 2px solid red;
+}
+
+@media (min-width: 56em) {
+  .container {
+    padding-inline: 2rem;
+  }
+}
+
 .text-color-primary-200 { color: var(--clr-primary-200); }
 .text-color-primary-300 { color: var(--clr-primary-300); }
 .text-color-primary-400 { color: var(--clr-primary-400); }
