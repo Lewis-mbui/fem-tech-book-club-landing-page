@@ -60,7 +60,7 @@
   /* Gradients */
   --text-gradient: linear-gradient(107deg, var(--clr-accent-400) -11.37%, var(--clr-primary-400) 61.84%);
   --default-gradient: linear-gradient(90deg, var(--clr-accent-200) 0%, var(--clr-accent-300)100%);
-  --card-gradient:linear-gradient(135deg, var(--clr-neutral-200) 65%, var(--clr-primary-300) 100%);
+  --card-gradient:linear-gradient(135deg, var(--clr-neutral-200) 75%, var(--clr-primary-300) 100%);
 
   /* Typography */
   --ff-primary: 'Martian Mono', sans-serif;
@@ -253,7 +253,7 @@ svg {
     position: relative;
   }
 
-  :where(.list--num >  :not(:last-child))::after{
+  :where(.list--num > :not(:last-child))::after{
     content: url(/public/images/pattern-arrow.svg);
     position: absolute;
     right: 0;
@@ -445,6 +445,18 @@ svg {
     left: 0;
     transform: translateX(-50%);
   }
+}
+
+/* GUIDE SECTION */
+.guide__container {
+  padding-block: 3.25rem;
+  background: url(/public/images/pattern-light-bg.svg), 
+    var(--card-gradient);
+  background-size: cover;
+}
+
+.guide__heading {
+  margin-bottom: 1.5rem;
 }
 
 /* UTILITY CLASSES */

@@ -8,79 +8,22 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <section class="features">
-      <div class="features__container | container">
-        <section class="feature">
-          <div class="feature__content" data-switch>
-            <h2
-              class="feature__title | fw-semibold ff-primary fs-secondary-heading lh-secondary-header"
-            >
-              Read together, Grow together
-            </h2>
-            <ul
-              class="list--tick | ff-secondary text-color-primary-400"
-              role="list"
-            >
-              <li>Monthly curated tech reads selected by industry experts</li>
-              <li>Virtual and in-person meetups for deep-dive discussions</li>
-              <li>Early access to new tech book releases</li>
-              <li>Author Q&A sessions with tech thought leaders</li>
-            </ul>
-          </div>
-          <picture>
-            <source
-              media="(max-width: 800px)"
-              srcset="/public/images/image-read-together-mobile.webp"
-            />
-            <source
-              media="(min-width: 801px) and (max-width: 1039px)"
-              srcset="/public/images/image-read-together-tablet.webp"
-            />
-            <img
-              class="feature__image"
-              src="public/images/image-read-together-desktop.webp"
-              alt="A group of people reading together"
-            />
-          </picture>
-        </section>
-        <section class="feature">
-          <div class="feature__content">
-            <h2
-              class="feature__title | fw-semibold ff-primary fs-secondary-heading lh-secondary-header"
-            >
-              Not your average book <span class="circled">club</span>
-            </h2>
-            <p class="ff-secondary text-color-primary-200 fs-body">
-              Connect with a community that speaks your language - from
-              <span class="fw-bold">Python</span>
-              to <span class="fw-bold">TypeScript</span> and everything in
-              between. Our discussions blend technical depth with practical
-              applications
-            </p>
-          </div>
-          <div class="features__images-wrapper">
-            <picture>
-              <source
-                media="(max-width: 800px)"
-                srcset="/public/images/image-not-average-mobile.webp"
-              />
-              <source
-                media="(min-width: 801px) and (max-width: 1039px)"
-                srcset="/public/images/image-not-average-tablet.webp"
-              />
-              <img
-                class="feature__image"
-                src="public/images/image-not-average-desktop.webp"
-                alt="A group of people reading together"
-              />
-            </picture>
-            <img
-              class="features__tech-logos"
-              src="/public/images/logos-tech.svg"
-              alt=""
-            />
-          </div>
-        </section>
+    <section class="guide">
+      <div class="container guide__container">
+        <h2
+          class="guide__heading | ff-primary text-color-primary-400 fs-secondary-heading fw-semibold"
+        >
+          Your tech reading journey
+        </h2>
+        <ol
+          class="list list--num | ff-primary text-color-primary-400"
+          role="list"
+        >
+          <li class="fw-semibold">Choose your membership tier</li>
+          <li class="fw-semibold">Get your monthly book selection</li>
+          <li class="fw-semibold">Join our discussion forums</li>
+          <li class="fw-semibold">Attend exclusive meetups</li>
+        </ol>
       </div>
     </section>
     <script type="module" src="/src/main.js"></script>
