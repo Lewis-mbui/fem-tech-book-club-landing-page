@@ -371,6 +371,81 @@ svg {
   border-radius: .25rem;
 }
 
+/* FEATURES SECTION */
+.feature {
+  display: grid;
+  row-gap: 2rem;
+  padding-block: 2rem;
+}
+
+.feature__title {
+  margin-bottom: 1.3rem;
+  color: var(--clr-primary-400);
+}
+
+.feature__title .circled {
+  position: relative;
+}
+
+.feature__title .circled::before {
+  content: url(/public/images/pattern-circle.png);
+  position: absolute;
+  top: -6px;
+  left: -30px;
+}
+
+.feature__image {
+  border-radius: .5rem;
+}
+
+.features__images-wrapper {
+  position: relative;
+}
+
+.features__tech-logos {
+  position: absolute;
+  display: none;
+}
+
+@media (min-width: 50em) {
+  .feature__title .circled::before {
+    left: -8px;
+  }
+}
+
+@media (min-width: 65em) {
+  .feature {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  .feature__content[data-switch] {
+    order: 2;
+  }
+
+  .feature__title .circled::before {
+    left: -8px;
+    top: 2px;
+  }
+
+  .feature__image {
+    position: relative;
+  }
+
+  .feature__image::before {
+    content: url(/public/images/logos-tech.svg);
+    position: absolute;
+    z-index: 99;
+  }
+
+  .features__tech-logos {
+    display: block;
+    top: 60%;
+    left: 0;
+    transform: translateX(-50%);
+  }
+}
 
 /* UTILITY CLASSES */
 .container {
