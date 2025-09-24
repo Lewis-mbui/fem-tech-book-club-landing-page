@@ -543,6 +543,30 @@ svg {
   }
 }
 
+/* CTA */
+.cta {
+  border-top-left-radius: 1.3rem;
+  border-top-right-radius: 1.3rem;
+  overflow: hidden;
+  padding-bottom: 3rem;
+}
+
+.cta__container > * + *{
+  margin-top: 1.2rem;
+}
+
+.cta__heading, .btn-wrapper{
+  text-align: center;
+}
+
+.cta__media {
+  margin-inline: auto;
+}
+
+.cta .media__text {
+  color: var(--clr-neutral-100);
+}
+
 /* UTILITY CLASSES */
 .container {
   padding-inline: 1rem;
