@@ -567,6 +567,22 @@ svg {
   color: var(--clr-neutral-100);
 }
 
+/* FOOTER */
+.footer {
+  padding-block: 1rem;
+}
+
+.footer__copyright {
+  text-align: center;
+}
+
+.footer__icons {
+  margin-top: .7rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
 /* UTILITY CLASSES */
 .container {
   padding-inline: 1rem;
