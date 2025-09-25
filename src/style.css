@@ -333,12 +333,16 @@ svg {
 
 /* HEADER */
 .header {
-  padding-block: 1rem;
+  padding-top: 1rem;
+  background: url(/public/images/pattern-light-bg.svg), 
+    var(--clr-accent-300);
 }
 
 /* HERO SECTION */
 .hero {
-  padding-block: 2rem;
+  padding-block: 3rem;
+  background: url(/public/images/pattern-light-bg.svg), 
+    var(--clr-accent-300);
 }
 
 .hero__container {
@@ -346,9 +350,26 @@ svg {
   gap: 3rem;
 }
 
+.hero__headline {
+  max-width: 15ch;
+}
+
+.hero__text {
+  max-width: 57ch;
+}
+
+@media (min-width: 50em) {
+  
+}
+
 @media (min-width: 65em) {
   .hero__container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .hero__headline {
+    width: 14ch;
   }
 }
 
@@ -373,6 +394,10 @@ svg {
 }
 
 /* FEATURES SECTION */
+.features {
+  padding-block: 2rem;
+}
+
 .feature {
   display: grid;
   row-gap: 2rem;
@@ -415,6 +440,10 @@ svg {
 }
 
 @media (min-width: 65em) {
+  .features {
+    padding-block: 3rem;
+  }
+
   .feature {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -472,6 +501,7 @@ svg {
 
 /* MEMBERSHIP BLOCK */
 .membership {
+  padding-block: 2rem;
   padding-inline: 1rem;
   gap: 1rem;
 }
@@ -503,6 +533,10 @@ svg {
 }
 
 @media (min-width: 65em) {
+  .membership {
+    padding-block: 3rem;
+  }
+
   .membership__heading {
     text-align: center;
   }
@@ -533,6 +567,10 @@ svg {
 }
 
 /* TESTIMONIAL */
+.testimonial {
+  padding-block: 2rem;
+}
+
 .testimonial__container > * + * {
   margin-top: 1rem;
 }
@@ -547,6 +585,12 @@ svg {
   color: var(--clr-primary-200);
 }
 
+@media (min-width: 50em) {
+  .testimonial {
+    padding-bottom: 4rem;
+  }
+}
+
 @media (min-width: 65em) {
   .testimonial__container {
     text-align: center;
@@ -558,7 +602,10 @@ svg {
   border-top-left-radius: 1.3rem;
   border-top-right-radius: 1.3rem;
   overflow: hidden;
+  padding-top: 2rem;
   padding-bottom: 3rem;
+  background: url(/public/images/pattern-dark-bg.svg), 
+    var(--clr-primary-400);
 
 }
 
@@ -581,6 +628,8 @@ svg {
 /* FOOTER */
 .footer {
   padding-inline: 1rem;
+  background: url(/public/images/pattern-dark-bg.svg), 
+    var(--clr-primary-400);
 }
 
 .footer__container {
