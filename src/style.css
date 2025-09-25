@@ -449,6 +449,10 @@ svg {
 }
 
 /* GUIDE SECTION */
+.guide {
+  padding-inline: 1rem;
+}
+
 .guide__container {
   padding-block: 3.25rem;
   background: url(/public/images/pattern-light-bg.svg), 
@@ -458,6 +462,12 @@ svg {
 
 .guide__heading {
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 50em) {
+  .guide {
+    padding-inline: 2rem;
+  }
 }
 
 /* MEMBERSHIP BLOCK */
@@ -549,6 +559,7 @@ svg {
   border-top-right-radius: 1.3rem;
   overflow: hidden;
   padding-bottom: 3rem;
+
 }
 
 .cta__container > * + *{
@@ -569,18 +580,36 @@ svg {
 
 /* FOOTER */
 .footer {
-  padding-block: 1rem;
+  padding-inline: 1rem;
 }
 
-.footer__copyright {
-  text-align: center;
+.footer__container {
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  align-items: center;
+  border-top: 1px solid #444;
+  max-width: 1100px;
+  margin-inline: auto;
 }
 
 .footer__icons {
-  margin-top: .7rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+@media (min-width: 50em) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+  }
+
+  .footer__icons {
+    gap: .8rem;
+  }
 }
 
 /* UTILITY CLASSES */
@@ -588,7 +617,7 @@ svg {
   padding-inline: 1rem;
   max-width: 1100px;
   margin-inline: auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 @media (min-width: 56em) {
