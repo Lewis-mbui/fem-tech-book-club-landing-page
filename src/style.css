@@ -413,12 +413,12 @@ svg {
   position: relative;
 }
 
-.feature__title .circled::before {
+/* .feature__title .circled::before {
   content: url(/public/images/pattern-circle.png);
   position: absolute;
   top: -6px;
   left: -30px;
-}
+} */
 
 .feature__image {
   border-radius: .5rem;
@@ -434,9 +434,9 @@ svg {
 }
 
 @media (min-width: 50em) {
-  .feature__title .circled::before {
+  /* .feature__title .circled::before {
     left: -8px;
-  }
+  } */
 }
 
 @media (min-width: 65em) {
@@ -454,10 +454,10 @@ svg {
     order: 2;
   }
 
-  .feature__title .circled::before {
+  /* .feature__title .circled::before {
     left: -8px;
     top: 2px;
-  }
+  } */
 
   .feature__image {
     position: relative;
